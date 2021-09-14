@@ -3,14 +3,17 @@ let idInterval
 
 function amarelo() {
     semaforo.src = "img/amarelo.png" 
+    pararPiscar()
 }
 
 function verde() {
     semaforo.src = "img/verde.png" 
+    pararPiscar()
 }
 
 function vermelho() {
     semaforo.src = "img/vermelho.png" 
+    pararPiscar()
 }
 
 function desligada() {
@@ -35,9 +38,7 @@ function trocarImagem() {
 
 function auto() {
     const auto = document.getElementById("auto")
-    if(setInterval(trocarImagem, 1000)) {
-        pararPiscar()
-    }   
+    idInterval = setInterval(trocarImagem, 1000)
 }
 
 document.getElementById("amarelo")
