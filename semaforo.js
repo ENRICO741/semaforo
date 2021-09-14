@@ -39,7 +39,7 @@ function trocarImagem() {
         semaforo.src = "img/verde.png" 
     }
     else if(semaforo.src.includes("verde")){
-        semaforo.src = "img/desligado.png"
+        semaforo.src = "img/vermelho.png"
     }
 }
 
